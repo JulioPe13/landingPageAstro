@@ -1,0 +1,161 @@
+---
+
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        
+        <style>
+            * {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+footer {
+    margin-top: 50px;
+    font-family:sans-serif;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(90deg, #43cbff, #9708cc);
+  color: #fff;
+  padding: 100px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+  border-top-left-radius: 125px ;
+}
+
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+   margin-bottom: 10px;
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+ 
+ul li{
+    list-style: none;
+    
+ }
+ 
+ul li > a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    color: white;
+    padding: 5px;
+    border-radius: 12px;
+    background-color: transparent;
+    border:solid 1px;
+    border-color: white;
+    
+    
+}
+
+button:hover{
+    background: linear-gradient(90deg, #F0FF00, #58CFFB );
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin:20px auto;
+
+}
+.copyright{
+    text-align: center;
+}
+.underline{
+width: 100%;
+height: 5px;
+background: #767676;
+border-radius: 3px;
+position: absolute;
+top: 25px;
+left: 0;
+overflow: hidden;
+}
+
+.underline span{
+width: 15px;
+height: 100%;
+background: #fff;
+border-radius: 3px;
+position: absolute;
+top: 0;
+left: 10px;
+animation:moving 2s linear infinite;
+}
+
+@keyframes moving{
+    0%{
+        left: -10px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+        </style>
+    </head>
+    <body>
+        
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <img src="/assets/Logo.png" class="logo">
+                <p>"Tus Problemas, Nuestra Solucion" </p>
+                </div>
+                <div class="col">
+                    <h3>oficina <div class="underline"><span></span></div></h3>
+                    <p>Panamá: David, Chiriquí</p>
+                    <p>Oficinas Virtuales</p>
+                    <p class="email-id">supportJConline@gmail.com</p>
+                </div>
+    
+                <div class="col">
+                    <h3>Enlaces  <div class="underline"><span></span></div></h3>
+                    <ul>
+                    <li> <a href="/">Inicio</a></li>
+                    <li> <a href="/about/">Nosotros</a></li>
+                    <li> <a href="">Home</a></li>
+                    <li> <a href="">contacto</a></li></ul>
+                </div>
+                <div class="col">
+                    <h3>Trabajo  <div class="underline"><span></span></div></h3>
+                    <button>Contactanos</button>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"> SupportJConline &copy; 2023 </p>
+        </footer>
+    </body>
+</html>

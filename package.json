@@ -1,0 +1,19 @@
+{
+  "name": "proyecto",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.0.2",
+    "animate.css": "^4.1.1",
+    "astro": "^3.2.0",
+    "scrollreveal": "^4.0.9",
+    "tailwindcss": "^3.3.3"
+  }
+}

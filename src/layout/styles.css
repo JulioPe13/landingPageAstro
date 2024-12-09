@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter+Tight:wght@600&display=swap');
+.Contendor{
+  
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards{
+width: 100%;
+
+}
+
+
+/*Dispositivos moviles*/
+@media (max-width: 450px) { 
+  
+  .Contendor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .titulo-dos{
+    font-size: 1rem;
+ }
+
+ .cards{
+  width: 100%;
+  height: 900px;
+ }
+}
+@media (max-width: 767px) { 
+  
+  .Contendor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .titulo-dos{
+    font-size: 1.3rem;
+ }
+
+ .cards{
+  width: 100%;
+  height: 900px;
+ }
+}
+
+
+@media (min-width: 768px) { 
+  .Contendor{
+    display: flex;
+    /*width: 100%;*/
+ 
+  } 
+  .titulo-dos{
+    font-size: 1.2rem;
+ }
+ .cards{
+  width: 100%;
+  height: 512px;
+ }
+}
+
+
+
+.name{
+font-size: 2.5rem;
+font-weight: bold;
+
+}
+.cards{
+width: 100%;
+height: 512px;
+padding: 32px;
+background-color: rgba(242,241,239,255);
+
+}
+.Fondo{
+  padding: 40px;
+background-image: url("https://cdn.pixabay.com/photo/2015/02/02/11/08/office-620817_1280.jpg");
+background-image:no-repeat;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.about_title{
+  margin-top: 40px;
+  font-size: 1rem;
+  font:italic;
+  margin-bottom:15px;
+}
+.titulo-dos{
+  font-size: 1.4rem;
+font-family: 'Inter Tight', sans-serif;
+font-weight:bolder;
+}
+.white{
+color: white;
+font-weight: 600;
+}
+
+/*Secccion de Main */
+
+/*texto children*/
+.equipo{
+text-align: center;
+font-weight: bold;
+font-size: 2rem;
+}
+
+
+
+@media screen and (min-width : 1026px) and (max-width : 1350px){
+  .main{
+      margin-top: 80px;
+      margin-bottom:50px;
+      max-width:80%;
+      }
+  .main-title{
+      padding-left: 4%;
+      margin-bottom: 40px;
+  }
+  .right-section{
+      padding-left: 4%;
+  }
+  .name{
+      font-size:14px;
+      margin:0;
+  }
+  .position{
+      font-size:12px;
+  }
+  img{
+      width:80%;
+  }
+  .team-members{
+      gap:unset;
+      max-width:98%;
+      padding: 3%;
+  }
+  .team{
+      flex-basis: 33.333%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*Stilos de la page index authores*/
+

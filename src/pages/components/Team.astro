@@ -1,0 +1,202 @@
+---
+
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Document</title>
+    <style>
+      .team-container {
+        width: 100%;
+        height: 700px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 25px;
+      }
+      .porcentaje {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .team {
+        padding: 10px;
+        width: 200px;
+        height: 290px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+        background-color: bisque;
+      }
+
+      .team > .redondo {
+        width: 100%;
+        max-width: 200px;
+        border-radius: 50%;
+      }
+
+      @media only screen and (max-width: 520px) {
+        /* Agrega tus estilos específicos para dispositivos móviles aquí */
+        .team-container {
+          width: 100%;
+          height: 1500px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          gap: 15px;
+        }
+        .team {
+          padding: 10px;
+          width: 160px;
+          max-width: 250px;
+          height: 230px;
+          max-height: 240px;
+          background-color: bisque;
+          text-align: center;
+        }
+        .team > .redondo {
+          width: 100%;
+          max-width: 115px;
+          border-radius: 50%;
+        }
+      }
+
+      @media only screen and (max-width: 850px) {
+        /* Agrega tus estilos específicos para dispositivos móviles aquí */
+        .team-container {
+          width: 100%;
+          height: 710px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          gap: 25px;
+        }
+        .team {
+          padding: 10px;
+          width: 160px;
+          max-width: 250px;
+          height: 230px;
+          max-height: 240px;
+          background-color: bisque;
+          text-align: center;
+        }
+        .team > .redondo {
+          width: 100%;
+          max-width: 115px;
+          border-radius: 50%;
+        }
+      }
+      /* Otros estilos específicos para dispositivos móviles */
+      */
+/*volores */
+.pastel1 {
+        background-color: #a9def9;
+      }
+      .pastel2 {
+        background-color: #e0b1cb;
+      }
+
+      .pastel3 {
+        background-color: #d0f4de;
+      }
+
+      .pastel4 {
+        background-color: #f2e9e4;
+      }
+
+      .infos {
+        width: 90%;
+        margin: auto;
+
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .info {
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-decoration: underline wavy blue;
+      }
+      .infos {
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+        background: linear-gradient(90deg, #90f7ec, #32ccbc);
+      }
+
+      @media only screen and (min-width: 1024px) {
+        .texto-c {
+          width: 50%;
+        }
+        .infos{
+          border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: none;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="infos">
+      <div class="info">
+        <h2>Equipo Creativo</h2>
+      </div>
+
+      <div>
+        <p class="texto-c">
+          Somos Un equipo; Gracias a la creatividad y el esfuerzo incansable de
+          sus creadores, este proyecto se ha convertido en una realidad
+          excepcional en el mundo de la tecnología
+        </p>
+      </div>
+    </section>
+    <section class="team-container">
+      <div class="porcentaje">
+        <div class="team">
+          <img class="redondo pastel1" src="/assets/Jesus.jpg" alt="Jesus" />
+          <h3>Jesus Otero</h3>
+          <p>Director de Proyecto</p>
+        </div>
+
+        <div class="team pastel3">
+          <img class="redondo" src="/assets/Jonathan.jpg" alt="Jonathan" />
+          <h3>Jonathan Castillo</h3>
+          <p>Ing. Desarrollo Software</p>
+        </div>
+
+        <div class="team pastel2">
+          <img class="redondo" src="/assets/Idalia.jpg" alt="Idalia" />
+          <h3>Idalia Villarreal</h3>
+          <p>Ing. Facilitadora</p>
+        </div>
+
+        <div class="team pastel4">
+          <img class="redondo" src="/assets/Julio.jpg" alt="Julio" />
+          <h3>Julio Peña</h3>
+          <p>Desarollador</p>
+        </div>
+
+        <div class="team pastel5">
+          <img class="redondo" src="/assets/cesaria.jpg" alt="Cesar" />
+          <h3>Cesar Rivera</h3>
+          <p>Diseñador Grafico</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

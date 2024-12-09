@@ -1,0 +1,73 @@
+---
+import Navegacion from "../pages/components/Navegacion.astro";
+import Footer from "./components/Footer.astro";
+import Team from "../pages/components/Team.astro"
+const titulopage = "About | SupportJConline";
+import "../layout/styles.css";
+
+---
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="../components/layout/styles.css">
+    <title>{titulopage}</title>
+    
+  </head>
+
+  <body>
+    
+    <Navegacion />
+    <section class="Contendor">
+      <div class="Fondo cards">
+        <h1 class="name white">Acerca de SupportCJonline</h1>
+        <p class="pad white">
+          Detrás de cada cliente satisfecho tenemos un equipo de especialistas y
+          consultores convencidos del cambio positivo con nuestras soluciones.
+        </p>
+      </div>
+
+      <div class="cards ">
+        <h1 class="about_title titulo-dos">
+          liderazgo en innovación tecnológica.
+        </h1>
+        <p>
+            Aplicación de soporte técnico que le permita al usuario de una manera fácil y accesible darles mantenimiento a sus equipos, a su vez también se busca aumentar los conocimientos mediante el procedimiento del mismo. 
+        </p>
+        
+
+          <h2 class="titulo-dos">Aprendizaje Continuo</h2>
+         
+          <p>
+            Nuestra plataforma puede facilitar el aprendizaje continuo a medida que los usuarios adquieren habilidades y conocimientos técnicos al resolver problemas. Esto puede tener un impacto positivo en sus oportunidades laborales y desarrollo personal.
+
+          </p>
+        </p>
+      </div>
+    </section>
+
+
+    <!-- Estructura de los objetivos -->
+
+
+    <!-- Estructura de los creadores -->
+   
+<Team/>
+  
+  
+
+
+    
+
+
+  </main>
+  
+
+ 
+<Footer/>
+  </body>
+  
+</html>
